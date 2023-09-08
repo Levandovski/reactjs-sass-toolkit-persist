@@ -1,0 +1,15 @@
+//confs e global
+
+@import "./_conf";
+@import "./global.scss";
+
+//components
+@import "../../layout/components/header/styles.scss";
+@import "../../layout/components/footer/styles.scss";
+
+//Layout
+@import "../../layout/styles.scss";
+//pages
+@import "../../pages/dashboard/styles.scss";
+@import "../../pages/usuarios/styles.scss";
+

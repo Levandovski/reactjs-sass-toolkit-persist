@@ -1,0 +1,34 @@
+/*
+APP Color Schema
+*/
+
+$MAIN: #fff;
+$PRIMARY: #1b5381;
+$SECONDARY: #ccc;
+$BLUE_GRAY: #abc;
+
+
+/*
+BREAKPOINTS
+*/
+
+//Usage Exempe: @media #{$BREAKPOINT-DESK}
+
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLED-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLED: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+
+/*
+Mixins
+*/
+
+@mixin margin-page {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+
+    @media #{$BREAKPOINT-DESK}{
+        max-width: 1000px;
+        background-color: #1b5381;
+    }
+}
